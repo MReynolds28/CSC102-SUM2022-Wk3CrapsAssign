@@ -1,0 +1,114 @@
+<!--Html file for CSC102 Assignment #1:
+    Launching your UAT Space Program HTML Doc Tags
+    written by Matthew Reynolds
+    email: matreyno@uat.edu-->
+<!DOCTYPE html>
+<html>
+    <!--Head tag for assignment-->
+<head>
+   <title>
+       <!--Ths is the title tag
+        as well as the title text-->
+       Matthew Reynold's UAT Space Page
+   </title>
+   <script>
+       //alert function required by assignment
+       var alertText = "This website is built different";
+       //alert(alertText);
+   </script>
+   <script src="code.js"></script>
+   <style>
+       body {
+           background-color: rebeccapurple;
+           color: white;
+       }
+   </style>
+</head>
+<!--This the body tag-->
+<body>
+    <!--This is the logo-->
+    <img src="UATSpaceLogo-1.jpg">
+    <!--Header-->
+    <h1>H1 Sample text</h1>
+    <!--Paragraph tag-->
+    <p>
+        Test for the paragraph tag.
+        Usually meant to be used in more than one line. 
+        But this is just a test of the paragraph tag.
+    </p>
+   
+   <script>
+        //one line comment on JavaScript
+        //textValue comment
+        var textValue = "Test of the document.write()";
+        //use of the  textValue comment I made
+        document.write(textValue);
+
+        /*multiline
+        comment*/
+    </script>
+    <br>
+    <br>
+    Time left before launch:<br>
+    <div id="countdownDisplay">Launch not intiated</div>
+    <br>
+    <br>
+    <!--Both button requirements-->
+    <button onclick="blastoffTimerV1()">Start</button>
+    <button>Stop</button>
+    <br>
+    <br>
+    <!--Title for Craps game-->
+    <h1> Craps Game!</h1>
+    <h2>Come play!</h2>
+    <!--Set up for the UI for playing craps on the page
+    as well as giving the dice ID's -->
+    Die 1 result: <div id="die1Res">Press Play Craps to roll dice</div><br>
+    Die 2 result: <div id="die2Res">Press Play Craps to roll dice</div><br>
+    <div id="crapsRes">GameResults</div>
+    <br>
+    <button>Play Craps</button>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>
+<!--The HTML Tag and everything is inside it besides DOC TYPE-->
+<!--Html comment-->
+<script>
+    //JavaScript comment
+</script>
